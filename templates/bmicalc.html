@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Витин калькулятор пацанов</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+</head>
+<h1>BMI Calculator</h1>
+<body>
+    <div class="main">
+        <form class="pure-form" method="POST" action="/">
+            Вес пацана в кг:<br>
+            <input type="text" name="weight"><br>
+            Рост пацана в см:<br>
+            <input type="text" name="height"><br>
+            <button type="submit" class="pure-button pure-button-primary">Нажать</button>
+        </form>
+    </div>
+    <br>
+    <div class="main">
+        <p>Твой индекс массы пацана: {{ bmi }}</p>
+    </div>
+</body>
